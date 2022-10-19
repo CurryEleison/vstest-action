@@ -17,9 +17,9 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
         
-        #Using 12.x version as an example
+        #Using 16.x version as an example
       - name: Set Node.js 16.x for GitHub Action
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
